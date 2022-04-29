@@ -6,7 +6,7 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #598392;
+  --primary-color: #588291;
   --secondary-color: #AEC3B0;
   --accent1-color: #01161E;
   --accent2-color: #124559;
@@ -17,10 +17,10 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #01161E;  /* headlines on a white background */ 
-  --headline-color-on-color: #efec87; /* headlines on a colored background */ 
+  --headline-color-on-color: #EFF6E0; /* headlines on a colored background */ 
   --paragraph-color-on-white: #01161E; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #AEC3B0; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #549cb7;
+  --paragraph-background-color: #124559;
   --nav-link-color: #01161E;
   --nav-background-color: #598392;
   --nav-hover-link-color: #AEC3B0;
@@ -75,24 +75,24 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #;
-  background-color: #;
+  background-color: #979b9c;
+  background-color: #979b9c;
 }
 .colors td{
   width: 25%;
   height: 3em;
 }
 .primary {
-  background-color: var(598392);
+  background-color: var(--primary-color);
 }
 .secondary {
-  background-color: var(AEC3B0);
+  background-color: var(--secondary-color);
 }
 .accent1 {
-  background-color: var(01161E);
+  background-color: var(--accent1-color);
 }
 .accent2{
-  background-color: var(124559);
+  background-color: var(--accent2-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
