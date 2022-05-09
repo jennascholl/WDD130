@@ -10,6 +10,7 @@ body {
 
 .pageStuff h1 {
     font-family: Arial, sans-serif;
+    font-size: 45px;
 }
 
 .white {
@@ -44,8 +45,10 @@ body {
 
 footer p {
     margin: 4px auto;
+    width: 350px;
 }
 
 h1:hover {
     color: black;
+    font-weight: bold;
 }
