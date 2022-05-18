@@ -1,0 +1,35 @@
+#top {
+    background-color: red;
+    text-align: center;
+    margin: 0 20%;
+    padding: 2%;
+}
+#middle {
+    background-color: blue;
+    text-align: center;
+    margin: 0 14%;
+    padding: 4%;
+}
+#bottom {
+    background-color: green;
+    text-align: center;
+    margin: 0 8%;
+    padding: 6%;
+}
+h1 {
+    margin: 0;
+}
+.box {
+    display: inline-block;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+#left-box {
+    margin-left: 8%;
+}
+#right-box {
+    margin-right: 8%;
+    float: right;
+}
