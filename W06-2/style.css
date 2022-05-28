@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+.right {
+    background-color: #B9B8B9;
+    text-align: center;
+    grid-column: 2;
+    position: relative;
+    z-index: -1;
+}
+.left {
+    grid-column: 1;
+    position: relative;
+    z-index: -1;
+}
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    white-space: nowrap;
+}
+h3 {
+    color: #9C0E11;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 15%;
+}
+#red, #blue {
+    width: 100%;
+}
