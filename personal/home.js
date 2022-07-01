@@ -61,6 +61,9 @@ function displayRecipe(data) {
 //run function getRecipe when the generate button is clicked
 document.querySelector('#generate').addEventListener('click', getRecipe);
 
+//adds recipe to favorites page
+document.queerySelector('#favorites-button').addEventListener('click', getRecipe);
+
 //gets current year for copyright in the footer
 const currentDate = new Date();
 document.querySelector('#year').textContent = currentDate.getFullYear();
