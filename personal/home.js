@@ -54,6 +54,11 @@ function displayRecipe(data) {
                 </div>`;
 
   outputElement.innerHTML = html;
+  window.scrollTo({
+    top: 600,
+    left: 0,
+    behavior: 'smooth'
+  });
   //logs data in the console, this was helpful to me while writing the program
   console.log("first: ", results);
 };
