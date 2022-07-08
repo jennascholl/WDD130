@@ -107,7 +107,7 @@ nav a:hover {
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-rows: fit-content(1em);
     background-color: #F8F5E2;
-    border: 5px solid #3A4708;
+    border: 5px solid #6B705C;
     transition: transform .5s;
     box-shadow: 5px 5px 10px black;
 }
@@ -144,7 +144,7 @@ nav a:hover {
 }
 #ingredients-title {
     height: 30px;
-    background-color: #3A4708;
+    background-color: #6B705C;
     color: #F8F5E2;
     margin: 0 25px;
     margin-top: 20px;
@@ -178,7 +178,7 @@ nav a:hover {
 
 }
 #instructions-title {
-    background-color: #3A4708;
+    background-color: #6B705C;
     color: #F8F5E2;
     margin: 0 25px;
     padding-left: 10px;
@@ -231,12 +231,12 @@ footer a:hover {
     text-align: center;
 }
 .button {
-    color: #3A4708;
+    color: #F8F5E2;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    background-color: #F8F5E2;
-    border: 5px solid #3A4708;
+    border: none;
+    background-color: #3A4708;
     transition: transform .5s;
     box-shadow: 5px 5px 10px black;
     text-align: center;
@@ -290,9 +290,7 @@ li {
 }
 #shopping-list {
     background-color: #F8F5E2;
-    border: 5px solid #3A4708;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px black;
+    border: 5px solid #6B705C;
     grid-column: 2;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
@@ -304,61 +302,11 @@ li {
     margin-left: auto;
     min-height: 300px;
 }
-#day-1, #day-2, #day-3, #day-4, #day-5, #day-6, #day-7 {
-    grid-column: 1;
-    background-color: #F8F5E2;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 7px;
-    margin: auto 0;
-}
-#meal-1, #meal-2, #meal-3, #meal-4, #meal-5, #meal-6, #meal-7 {
-    grid-column: 2;
-    background-color: #F8F5E2;
-    font-size: 18px;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-#day-1, #meal-1 {
-    grid-row: 1;
-    background-color: #F8F5E2;
-    margin: 0;
-}
-#day-2, #meal-2 {
-    background-color: #F8F5E2;
-    margin: 0;
-    grid-row: 2;
-}
-#day-3, #meal-3 {
-    grid-row: 3;
-    background-color: #F8F5E2;
-    margin: 0;
-}
-#day-4, #meal-4 {
-    grid-row: 4;
-    background-color: #F8F5E2;
-    margin: 0;
-}
-#day-5, #meal-5 {
-    grid-row: 5;
-    background-color: #F8F5E2;
-    margin: 0;
-}
-#day-6, #meal-6 {
-    grid-row: 6;
-    background-color: #F8F5E2;
-    margin: 0;
-}
-#day-7, #meal-7 {
-    grid-row: 7;
-    background-color: #F8F5E2;
-    margin: 0;
-}
 #shopping-title {
     font-family: "Noto", serif;
     font-weight: normal;
     font-size: 24px;
-    background-color: #3A4708;
+    background-color: #6B705C;
     color: #F8F5E2;
     margin: 0 15px;
     margin-top: 20px;
@@ -377,5 +325,58 @@ li {
     margin: 25px auto;
     text-align: center;
     font-size: 18px;
+    border: none;
 }
+#accordian-group {
+    grid-column: 1;
+    border: 5px solid #3A4708;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    margin-left: 25px;
+    width: 95%;
+    background-color: #6B705C;
+    color: #F8F5E2;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+  }
+  #first-accordion {
+    margin-top: 25px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    opacity: 0.8;
+  }
+  .active {
+    box-shadow: 5px 5px 10px black;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin-left: 25px;
+    width: 92%;
+    padding: 0 18px;
+    background-color: #F8F5E2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    color: #F8F5E2;
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #F8F5E2;
+  }
 
