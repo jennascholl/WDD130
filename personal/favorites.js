@@ -11,15 +11,7 @@ async function getRecipe() {
     displayRecipe(data);
     results = data;
   }
-  
-};
-async function clearOutput() {
-  const output = document.querySelector('#output');
-  output.innerHTML = '';
-}
-function addToFavorites() {
-  window.location.href = "./favorites.html";
-  // displayRecipe(results);
+    
 };
 
 function addToPlanner() {
@@ -31,7 +23,7 @@ function addToPlanner() {
 function displayRecipe(results) {
   const output = document.querySelector('#output');
   const recipeCard = document.createElement('div');
-  recipeCard.id = "recipe-box";
+  recipeCard.className = "fav-recipe-box";
   output.appendChild(recipeCard);
 
   const recipeName = document.createElement('h2');
@@ -78,22 +70,6 @@ function displayRecipe(results) {
   recipePhoto.alt = 'thumbnail';
   recipeCard.appendChild(recipePhoto);
   
-  const favButton = document.createElement('input');
-  favButton.type = 'button';
-  favButton.id = 'favorites-button';
-  favButton.className = "button";
-  favButton.value = 'Add to Favorites';
-  favButton.addEventListener('click', addToFavorites);
-  recipeCard.appendChild(favButton);
-
-  const plannerButton = document.createElement('input');
-  plannerButton.type = 'button';
-  plannerButton.id = 'planner-button';
-  plannerButton.className = 'button';
-  plannerButton.value = 'Add to Planner';
-  plannerButton.addEventListener('click', addToPlanner);
-  recipeCard.appendChild(plannerButton);
-
   const instructionsTitle = document.createElement('h3');
   instructionsTitle.innerHTML = 'Instructions:';
   instructionsTitle.className = 'instructions-title';
@@ -104,17 +80,26 @@ function displayRecipe(results) {
   instructions.className = "instructions";
   recipeCard.appendChild(instructions);
 
-  window.scrollTo({
-    top: 600,
-    left: 0,
-    behavior: 'smooth'
-  });
+  const favButton = document.createElement('input');
+  favButton.type = 'button';
+  favButton.id = 'favorites-button';
+  favButton.className = "button";
+  favButton.value = 'Add to Favorites';
+  recipeCard.appendChild(favButton);
+
+  const plannerButton = document.createElement('input');
+  plannerButton.type = 'button';
+  plannerButton.id = 'planner-button';
+  plannerButton.className = 'button';
+  plannerButton.value = 'Add to Planner';
+  plannerButton.addEventListener('click', addToPlanner);
+  recipeCard.appendChild(plannerButton);
+
+
   //logs data in the console, this was helpful to me while writing the program
   console.log("first: ", results);
-
 };
 
-//run function getRecipe when the generate button is clicked
-document.querySelector('#generate').addEventListener('click', clearOutput);
-document.querySelector('#generate').addEventListener('click', getRecipe);
-  //adds recipe to favorites page
+getRecipe();
+getRecipe();
+getRecipe();

@@ -177,7 +177,7 @@ nav a:hover {
     margin-left: 10px;
 
 }
-#instructions-title {
+.instructions-title {
     background-color: #6B705C;
     color: #F8F5E2;
     margin: 0 25px;
@@ -188,7 +188,7 @@ nav a:hover {
     grid-column: 1/5;
     grid-row: 4;
 }
-#instructions {
+.instructions {
     padding: 0 25px;
     margin-bottom: 25px;
     margin-left: 10px;
@@ -250,6 +250,18 @@ li {
 }
 
 /* Favorites page styles */
+.fav-recipe-box {
+    width: 60%;
+    margin:25px auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: fit-content(1em);
+    background-color: #F8F5E2;
+    border: 5px solid #6B705C;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+}
+
 #favorites-output {
     font-weight: bold;
     font-size: 24px;
@@ -261,6 +273,19 @@ li {
     width: 50%;
     margin: 25px auto;
 
+}
+#favorites-text {
+    padding-top: 20px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: #3A4708;
+}
+
+#suggestions {
+    font-size: 40px;
+    font-family: 'Noto', serif;
+    font-weight: normal;
+    text-align: center;
 }
 
 /* Meal planner page styles */
