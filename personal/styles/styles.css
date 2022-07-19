@@ -19,7 +19,6 @@ nav {
 }
 nav, a {
     text-align: center;
-    text-justify: center;
     font-size: 20px;
     color: #F8F5E2;
     background-color: #3A4708;
@@ -208,7 +207,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 20;
+    font-size: 20px;
 }
 footer {
     color: #F8F5E2;
